@@ -1,0 +1,81 @@
+.cart-page {
+  min-height: calc(100vh - 4vmax);
+}
+
+.cart-page h2 {
+  color: #7e1117;
+  font-size: 3vmax;
+  letter-spacing: 2px;
+  padding: 2vmax 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 40vmax;
+}
+
+.cart-table {
+  width: 60%;
+  /* background-color: #7e1117; */
+  padding: 1vmax;
+}
+
+.cart-table table {
+  width: 100%;
+}
+
+.cart-table table thead th {
+  font-size: 1vmax;
+  font-weight: 600;
+}
+
+.cart-table table tbody td {
+  text-align: center;
+  padding: 1vmax;
+}
+
+.cart-table table tr,
+.cart-table table th {
+  padding: 1vmax;
+  border-bottom: 3px solid #000;
+}
+
+.cart-pay {
+  width: 25%;
+  background-color: #212121;
+  padding: 1vmax 2vmax;
+}
+
+.cart-pay h3{
+    color: #fff;
+    font-size: 1vmax;
+    letter-spacing: 1px;
+    line-height: 2vmax;
+}
+
+.cart-pay h3 span{
+    font-size: 1.3vmax;
+    font-weight: 600;
+}
+
+.cart-pay button{
+    cursor: pointer;
+    background-color: #7e1117;
+    border: none;
+    padding: .5vmax 1vmax;
+    margin: 1vmax 0;
+    color: #fff;
+    font-size: 1vmax;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: .4vmax .4vmax 0vmax rgba(255, 255, 255, 0.5);
+    transition: .5s;
+}
+
+.cart-pay button:hover{
+    box-shadow: none;
+}

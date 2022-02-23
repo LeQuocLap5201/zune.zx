@@ -1,0 +1,27 @@
+.form-filter{
+    width: 100%;
+    padding: 2vmax 0;
+}
+
+.form-filter ul{
+    display: flex;
+}
+
+.form-filter ul li{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 1vmax;
+    text-transform: uppercase;
+    padding: .5vmax 1vmax;
+    border: 2px solid #000;
+    border-radius: 2vmax;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.form-filter ul li:hover{
+    background-color: #7e1117;
+    color: #fff;
+    border: 2px solid #7e1117;
+}

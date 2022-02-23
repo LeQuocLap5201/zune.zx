@@ -1,0 +1,44 @@
+.swiper-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0.5vmax;
+  border-bottom: 5px solid #7e1117;
+  cursor: pointer;
+}
+
+.swiper-box-img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.5vmax;
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.swiper-box:hover .swiper-box-overlay {
+  transform: translateY(0);
+}

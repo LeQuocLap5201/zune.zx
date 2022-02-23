@@ -1,0 +1,108 @@
+.detail-page {
+  width: 100%;
+  height: calc(100vh - 12vmax);
+  margin: 5vmax auto 2vmax;
+  position: relative;
+}
+
+.detail-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  min-height: 80%;
+  background-color: #212121;
+  padding: 5vmax 13vmax 2vmax 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-content p {
+  color: #fff;
+  font-size: 1vmax;
+  line-height: 1.3vmax;
+  margin-bottom: 1vmax;
+}
+
+.detail-content h2 {
+  font-family: "Fjalla One", sans-serif;
+  color: #7e1117;
+  font-size: 2vmax;
+  margin-bottom: 1vmax;
+  font-weight: 700;
+}
+
+.detail-content span {
+  cursor: pointer;
+  width: 12vmax;
+  padding: 0.5vmax 1vmax;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.1vmax;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.detail-content span:hover {
+  background-color: #7e1117;
+  color: #fff;
+}
+
+.detail-img-intro {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 35%;
+  height: 80%;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.detail-img {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 15%;
+  height: 35%;
+  background-color: gray;
+  overflow: hidden;
+  z-index: 1;
+  border-bottom: 0.3vmax solid #7e1117;
+}
+
+.detail-name {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  padding: 1vmax 1vmax 1vmax 5vmax;
+  z-index: 1;
+}
+
+.detail-name h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 8vmax;
+  font-weight: 800;
+  letter-spacing: 1vmax;
+  color: #7e1117;
+  text-shadow: -0.5vmax 0.5vmax 0 rgba(126, 17, 22, 0.4);
+}
+
+.detail-img-intro img,
+.detail-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ld{
+  width: 100%;
+  height: calc(100vh - 4vmax);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7e1117;
+  font-weight: 700;
+  font-size: 2vmax;
+}

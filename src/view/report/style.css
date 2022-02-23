@@ -1,0 +1,39 @@
+.report-page {
+  width: 100%;
+  min-height: calc(100vh - 4vmax);
+  background-color: #212121;
+  padding: 5vmax 0;
+  text-align: center;
+}
+
+.report-page h1 {
+  color: #7e1117;
+  font-weight: 700;
+  font-size: 2.5vmax;
+  margin-bottom: 2vmax;
+  text-transform: uppercase;
+}
+
+.report-page ul li {
+  color: #fff;
+  font-size: 1.2vmax;
+  line-height: 2vmax;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.report-page ul li span {
+  color: #7e1117;
+  font-size: 1.5vmax;
+  font-weight: 900;
+}
+
+.report-page .weather{
+  margin-bottom: 50px;
+}
+
+.report-page .weather h2{
+  color: #fff;
+  font-size: 1.5vmax;
+  margin-bottom: 10px;
+}

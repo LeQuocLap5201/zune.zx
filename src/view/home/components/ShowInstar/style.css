@@ -1,0 +1,73 @@
+.show-instar {
+  width: 100%;
+  background-color: #212121;
+  padding: 3vmax 5vmax;
+}
+
+.grid-instar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.instar-img {
+  width: 100%;
+  height: 100%;
+}
+
+.instar-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instar-img.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.instar-img.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.instar-img.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.instar-img.div4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.instar-img.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.instar-img.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.instar-img.div7 {
+  grid-area: 1 / 4 / 3 / 6;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.instar-img.div7 h2 {
+  color: #fff;
+  font-size: 2vmax;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 1vmax;
+}
+
+.instar-img.div7 p {
+  color: #fff;
+  font-size: 1vmax;
+  letter-spacing: 2px;
+  line-height: 2vmax;
+  margin-bottom: 2vmax;
+}
+
+.instar-img.div7 h3 {
+  color: #7e1117;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.5vmax;
+  letter-spacing: 2px;
+}

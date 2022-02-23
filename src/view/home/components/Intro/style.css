@@ -1,0 +1,54 @@
+.intro-home {
+  margin: 3vmax 0;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.intro-home-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30vmax;
+  box-shadow: 0 0 0 1vmax #fff, 0 0 0 1.1vmax #7e1117;
+}
+
+.intro-home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-home-txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-home-txt h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 8vmax;
+  color: #7e1117;
+  margin: 2vmax 0;
+  letter-spacing: 0.5vmax;
+}
+
+.intro-home-txt p {
+  font-size: 1.7vmax;
+  font-weight: 500;
+  line-height: 3vmax;
+  letter-spacing: 2px;
+}
+
+.intro-home-txt p span {
+  color: #7e1117;
+  font-weight: 700;
+}

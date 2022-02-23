@@ -1,0 +1,26 @@
+td img{
+    width: 40%;
+    object-fit: cover;
+}
+
+td.td-flex{
+    text-align: center; 
+    vertical-align: middle;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    color: #7e1117;
+}
+
+td.td-flex button{
+    cursor: pointer;
+    background-color: transparent;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}

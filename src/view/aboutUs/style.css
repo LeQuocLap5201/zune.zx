@@ -1,0 +1,23 @@
+.ab-main {
+  background-color: #212121;
+}
+
+.ab-main h1 {
+  color: #7e1117;
+  text-align: center;
+  font-size: 3vmax;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1vmax;
+  padding-top: 3vmax;
+}
+
+.about-us {
+  padding: 2vmax 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.about-us img {
+  width: 70%;
+}
