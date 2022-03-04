@@ -42,3 +42,15 @@
 .swiper-box:hover .swiper-box-overlay {
   transform: translateY(0);
 }
+
+@media screen and (max-width: 768px){
+  .swiper-box-overlay{
+    font-size: 2vmax;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .swiper-box-overlay{
+    font-size: 2.5vmax;
+  }
+}

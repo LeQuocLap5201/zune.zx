@@ -7,7 +7,7 @@ export default function ProductsPage() {
   const match = useRouteMatch();
 
   return (
-    <div>
+    <div style={{minHeight: "calc(100vh - 4vmax)"}}>
       <Switch>
         <Route path={match.path} component={ListPage} exact/>
         <Route path={`${match.path}/:id`} exact component={DetailPage} />

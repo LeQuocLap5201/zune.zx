@@ -13,3 +13,21 @@
   letter-spacing: 2px;
   color: #7e1117;
 }
+
+@media screen and (max-width: 1024px){
+  .row-slider h2{
+    font-size: 1.8vmax;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .row-slider h2{
+    font-size: 2vmax;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .row-slider h2{
+    font-size: 2.5vmax;
+  }
+}

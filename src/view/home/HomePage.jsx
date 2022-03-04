@@ -47,13 +47,17 @@ export default function HomePage() {
   return (
     <>
       <SliderShow />
-      <div className="container">
-        <Intro />
+      <div className="home-intro">
+        <div className="container">
+          <Intro />
+        </div>
       </div>
-      <div className="container">
-        <RowSlider products={topView} title={"xem nhiều"} />
-        <RowSlider products={listNew} title={"mới"} />
-        <RowSlider products={listHot} title={"hot"} />
+      <div className="home-product">
+        <div className="container">
+          <RowSlider products={topView} title={"xem nhiều"} />
+          <RowSlider products={listNew} title={"mới"} />
+          <RowSlider products={listHot} title={"hot"} />
+        </div>
       </div>
       <ShowInstar />
     </>

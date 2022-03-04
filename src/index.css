@@ -143,12 +143,18 @@ a {
   text-decoration: none;
 }
 
-.container{
-  width: 80%;
+.container {
+  width: calc(100% - 80px);
   margin: 0 auto;
 }
 
-::selection{
+::selection {
   background-color: #7e1117;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+  }
 }

@@ -155,7 +155,10 @@ export default function Header() {
                 rel="noreferrer"
                 onClick={() => setShowNav(!showNav)}
               >
-                Facebook
+                <span className="desk">Facebook .</span>
+                <span className="mobile">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </span>
               </a>
             </li>
             <li>
@@ -165,7 +168,10 @@ export default function Header() {
                 rel="noreferrer"
                 onClick={() => setShowNav(!showNav)}
               >
-                Intargram .
+                <span className="desk">Instagram .</span>
+                <span className="mobile">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </span>
               </a>
             </li>
             <li>
@@ -175,7 +181,10 @@ export default function Header() {
                 rel="noreferrer"
                 onClick={() => setShowNav(!showNav)}
               >
-                Tik Tok .
+                <span className="desk">Tik Tok .</span>
+                <span className="mobile">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </span>
               </a>
             </li>
             <li>
@@ -185,7 +194,10 @@ export default function Header() {
                 rel="noreferrer"
                 onClick={() => setShowNav(!showNav)}
               >
-                You Tube .
+                <span className="desk">You Tube .</span>
+                <span className="mobile">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </span>
               </a>
             </li>
           </ul>

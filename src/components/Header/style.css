@@ -1,7 +1,7 @@
 header {
   width: 100%;
   height: 4vmax;
-  padding: 0 10vw;
+  padding: 0 80px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -23,12 +23,12 @@ header {
   object-fit: cover;
 }
 
-.btn-google{
+.btn-google {
   margin: 0 20px 0 auto;
   display: none;
 }
 
-.img-avt{
+.img-avt {
   width: 1.5vmax;
   height: 1.5vmax;
   border-radius: 50%;
@@ -158,7 +158,7 @@ header {
   width: 100%;
 }
 
-.social-links ul li a{
+.social-links ul li a {
   font-family: "Archivo", sans-serif;
   text-transform: uppercase;
   font-size: 1vmax;
@@ -166,14 +166,18 @@ header {
   margin: 0 1vmax;
   color: #fff;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
+}
+
+.social-links ul li a span.mobile {
+  display: none;
 }
 
 .social-links ul li a:hover {
   color: #7e1117;
 }
 
-.social-links ul li{
+.social-links ul li {
   font-family: "Archivo", sans-serif;
   text-transform: uppercase;
   font-size: 1vmax;
@@ -181,9 +185,93 @@ header {
   margin: 0 1vmax;
   color: #fff;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .social-links ul li:hover {
   color: #7e1117;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 6vmax;
+  }
+
+  .logo {
+    width: 7vmax;
+    height: 6vmax;
+  }
+
+  .menu-right li {
+    width: 2vmax;
+    height: 2vmax;
+  }
+
+  .menu-right li ion-icon {
+    font-size: 2vmax;
+  }
+
+  .menu-right li.icon-cart {
+    width: 6vmax;
+  }
+
+  .menu-right li.icon-cart span {
+    font-size: 1vmax;
+    padding: 0.2vmax 1vmax;
+  }
+
+  .nav-slide .nav-close ion-icon {
+    font-size: 3.5vmax;
+  }
+
+  .social-links ul li a {
+    font-size: 1.3vmax;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .social-links ul li a span.desk{
+    display: none;
+  }
+
+  .social-links ul li a span.mobile{
+    display: block;
+    font-size: 3vmax;
+    margin: 0 .5vmax;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 8vmax;
+  }
+
+  .logo {
+    width: 8vmax;
+    height: 7vmax;
+  }
+
+  .menu-right li {
+    width: 3vmax;
+    height: 3vmax;
+  }
+
+  .menu-right li ion-icon {
+    font-size: 3vmax;
+  }
+
+  .menu-right li.icon-cart {
+    width: 7vmax;
+    margin-right: 2vmax;
+  }
+
+  .menu-right li.icon-cart span {
+    font-size: 1.3vmax;
+  }
 }

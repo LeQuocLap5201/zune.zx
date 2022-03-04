@@ -3,7 +3,6 @@ import React from "react";
 import "./style.css";
 
 export default function ShowInstar() {
-
   return (
     <div className="show-instar">
       <div className="container">
@@ -26,8 +25,14 @@ export default function ShowInstar() {
           <div className="instar-img div6" data-aos="fade-right">
             <img src="../img/ins6.jpg" alt="" />
           </div>
-          <div className="instar-img div7"  data-aos="fade-left">
-            <h2>Instargram</h2>
+          <div className="instar-img div7" data-aos="fade-left">
+            <a
+              href="https://www.instagram.com/zune.zx/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2>Instargram</h2>
+            </a>
             <p>
               Hành trình đi tìm bản ngã tuổi trẻ, đi tìm cái tôi cá nhân thông
               qua hơi thở thời trang “dị biệt” là một hành trình dài bất tận.
