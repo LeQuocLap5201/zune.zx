@@ -33,7 +33,7 @@ export default function DetailPage() {
   }, [id]);
 
   if (loading) {
-    return <div className='ld'>Loading...</div>;
+    return <div className="ld">Loading...</div>;
   }
 
   return (
@@ -43,6 +43,12 @@ export default function DetailPage() {
           <h1>{product.name}</h1>
         </div>
         <div className="detail-content">
+          <div className="name-moblie">
+            <h1>{product.name}</h1>
+          </div>
+          <div className="detail-mobile">
+            <img src={`../img/${product.imgIntro}`} alt={product.name} />
+          </div>
           <p>{product.desc}</p>
           <h2>
             {new Intl.NumberFormat("vi-VN", {
@@ -50,7 +56,9 @@ export default function DetailPage() {
               currency: "VND",
             }).format(+product.price)}
           </h2>
-          <span onClick={() => handleAddToCart(product.id)}>Thêm vào giỏ hàng</span>
+          <span onClick={() => handleAddToCart(product.id)}>
+            Thêm vào giỏ hàng
+          </span>
         </div>
         <div className="detail-img-intro">
           <img src={`../img/${product.imgIntro}`} alt={product.name} />

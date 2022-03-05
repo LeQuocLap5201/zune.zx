@@ -1,26 +1,71 @@
-td img{
-    width: 40%;
-    object-fit: cover;
+td img {
+  width: 40%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-td.td-flex{
-    text-align: center; 
-    vertical-align: middle;
-    font-size: 1.2vmax;
-    font-weight: 700;
-    color: #7e1117;
+td.td-flex {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2vmax;
+  font-weight: 700;
+  color: #7e1117;
 }
 
-td.td-flex button{
-    cursor: pointer;
-    background-color: transparent;
-    width: 1.5vmax;
-    height: 1.5vmax;
-    border: 2px solid #000;
-    border-radius: 50%;
-    font-size: 1vmax;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
+td.td-flex button {
+  cursor: pointer;
+  background-color: transparent;
+  width: 1.5vmax;
+  height: 1.5vmax;
+  border: 2px solid #000;
+  border-radius: 50%;
+  font-size: 1vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
 }
+
+@media screen and (max-width: 900px) {
+  td img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  td img {
+    width: 50%;
+  }
+
+  td.td-flex {
+    font-size: 1.5vmax;
+  }
+
+  td.td-flex button {
+    width: 2vmax;
+    height: 2vmax;
+    font-size: 1.5vmax;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  td img {
+    width: 80%;
+  }
+
+  td.td-flex {
+    font-size: 1.8vmax;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  td img {
+    width: 90%;
+  }
+
+  td.td-flex {
+    font-size: 2vmax;
+  }
+}
+

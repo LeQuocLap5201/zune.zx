@@ -1,6 +1,6 @@
 .detail-page {
   width: 100%;
-  height: calc(100vh - 12vmax);
+  min-height: calc(100vh - 12vmax);
   margin: 5vmax auto 2vmax;
   position: relative;
 }
@@ -12,7 +12,7 @@
   width: 80%;
   min-height: 80%;
   background-color: #212121;
-  padding: 5vmax 13vmax 2vmax 2vmax;
+  padding: 5vmax 20vmax 2vmax 2vmax;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,13 +80,18 @@
   z-index: 1;
 }
 
-.detail-name h1 {
+.detail-name h1,
+.name-moblie h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 8vmax;
   font-weight: 800;
   letter-spacing: 1vmax;
   color: #7e1117;
   text-shadow: -0.5vmax 0.5vmax 0 rgba(126, 17, 22, 0.4);
+}
+
+.name-moblie{
+  display: none;
 }
 
 .detail-img-intro img,
@@ -96,7 +101,11 @@
   object-fit: cover;
 }
 
-.ld{
+.detail-mobile {
+  display: none;
+}
+
+.ld {
   width: 100%;
   height: calc(100vh - 4vmax);
   display: flex;
@@ -105,4 +114,133 @@
   color: #7e1117;
   font-weight: 700;
   font-size: 2vmax;
+}
+
+@media screen and (max-width: 1300px) {
+  .detail-name {
+    top: -5%;
+  }
+
+  .detail-content p {
+    font-size: 1.3vmax;
+    line-height: 1.7vmax;
+    margin-bottom: 1.5vmax;
+  }
+
+  .detail-content h2 {
+    font-size: 2.5vmax;
+  }
+
+  .detail-content span {
+    width: 15vmax;
+    padding: 0.7vmax 1.4vmax;
+    font-size: 1.3vmax;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .detail-content p {
+    font-size: 1.5vmax;
+    line-height: 1.8vmax;
+  }
+
+  .detail-content span {
+    width: 18vmax;
+    font-size: 1.6vmax;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .detail-img {
+    left: 25%;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .detail-content p {
+    font-size: 1.7vmax;
+    line-height: 2vmax;
+  }
+
+  .detail-content h2 {
+    font-size: 3vmax;
+  }
+
+  .detail-content span {
+    width: 20vmax;
+    font-size: 1.8vmax;
+  }
+
+  .detail-img {
+    display: none;
+  }
+
+  .detail-img-intro {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .detail-page {
+    margin-top: 10vmax;
+  }
+
+  .detail-img-intro {
+    display: none;
+  }
+
+  .detail-mobile {
+    display: block;
+    text-align: center;
+    margin: 2vmax 0;
+  }
+
+  .detail-mobile img{
+    width: 100%;
+  }
+
+  .detail-content {
+    width: 100%;
+    padding: 5vmax 2vmax;
+    position: initial;
+  }
+
+  .detail-content p {
+    text-align: justify;
+    font-size: 2vmax;
+    line-height: 2.3vmax;
+  }
+
+  .detail-content h2 {
+    font-size: 4vmax;
+    text-align: center;
+    margin-bottom: 2vmax;
+  }
+
+  .detail-content span {
+    width: 23vmax;
+    font-size: 2vmax;
+    margin: 0 auto;
+    padding: 1vmax 2vmax;
+  }
+
+  .detail-name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .detail-page{
+    margin: 3vmax auto;
+  }
+
+  .detail-name{
+    display: none;
+  }
+
+  .name-moblie{
+    display: block;
+    text-align: center;
+  }
 }

@@ -16,10 +16,11 @@
   justify-content: space-between;
   align-items: flex-start;
   min-height: 40vmax;
+  flex-wrap: wrap;
 }
 
 .cart-table {
-  width: 60%;
+  width: 65%;
   /* background-color: #7e1117; */
   padding: 1vmax;
 }
@@ -50,32 +51,115 @@
   padding: 1vmax 2vmax;
 }
 
-.cart-pay h3{
-    color: #fff;
-    font-size: 1vmax;
-    letter-spacing: 1px;
-    line-height: 2vmax;
+.cart-pay h3 {
+  color: #fff;
+  font-size: 1vmax;
+  letter-spacing: 1px;
+  line-height: 2vmax;
 }
 
-.cart-pay h3 span{
+.cart-pay h3 span {
+  font-size: 1.3vmax;
+  font-weight: 600;
+}
+
+.cart-pay button {
+  cursor: pointer;
+  background-color: #7e1117;
+  border: none;
+  padding: 0.5vmax 1vmax;
+  margin: 1vmax 0;
+  color: #fff;
+  font-size: 1vmax;
+  letter-spacing: 2px;
+  font-weight: 600;
+  box-shadow: 0.4vmax 0.4vmax 0vmax rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.cart-pay button:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 900px) {
+  .cart-table table thead th {
     font-size: 1.3vmax;
-    font-weight: 600;
+  }
+
+  .cart-pay {
+    width: 30%;
+  }
 }
 
-.cart-pay button{
-    cursor: pointer;
-    background-color: #7e1117;
-    border: none;
-    padding: .5vmax 1vmax;
-    margin: 1vmax 0;
-    color: #fff;
-    font-size: 1vmax;
-    letter-spacing: 2px;
-    font-weight: 600;
-    box-shadow: .4vmax .4vmax 0vmax rgba(255, 255, 255, 0.5);
-    transition: .5s;
+@media screen and (max-width: 600px) {
+  .cart-table table thead th {
+    font-size: 1.5vmax;
+  }
+
+  .cart-pay {
+    width: 100%;
+    margin-bottom: 2vmax;
+  }
+
+  .cart-pay h3 {
+    font-size: 1.5vmax;
+    line-height: 2.5vmax;
+  }
+
+  .cart-pay h3 span {
+    font-size: 1.5vmax;
+  }
+
+  .cart-pay button {
+    padding: 0.8vmax 1.6vmax;
+    margin: 2vmax 0;
+    font-size: 1.5vmax;
+  }
+
+  .cart-table {
+    width: 100%;
+    margin-bottom: 2vmax;
+  }
 }
 
-.cart-pay button:hover{
-    box-shadow: none;
+@media screen and (max-width: 480px) {
+  .cart-table table thead th {
+    font-size: 2vmax;
+  }
+
+  .cart-pay h3 {
+    font-size: 2vmax;
+    line-height: 3vmax;
+  }
+
+  .cart-pay h3 span {
+    font-size: 2vmax;
+  }
+
+  .cart-pay button {
+    padding: 0.8vmax 1.6vmax;
+    margin: 2vmax 0;
+    font-size: 1.8vmax;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cart-table table thead th {
+    font-size: 2.2vmax;
+  }
+
+  .cart-pay h3 {
+    font-size: 2.2vmax;
+    line-height: 3.2vmax;
+  }
+
+  .cart-pay h3 span {
+    font-size: 2.2vmax;
+  }
+
+  .cart-pay button {
+    padding: 1vmax 2vmax;
+    margin: 2vmax 0;
+    font-size: 2vmax;
+  }
 }

@@ -33,7 +33,7 @@ function RowCart(props) {
       </td>
       <td className='td-flex'>{row.qty}</td>
       <td className='td-flex'>
-        <button onClick={() => handleDelete(row.id)}>x</button>
+        <button onClick={() => handleDelete(row.id)}><ion-icon name="close-outline"></ion-icon></button>
       </td>
     </tr>
   );
