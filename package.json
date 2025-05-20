@@ -51,5 +51,8 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "terser-brunch": "^4.1.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
